@@ -182,17 +182,17 @@ section {
 
 /* start of footer */
 footer {
-    
     padding: 20px 35px;
     display: inline-block;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
 }
 
 footer h2 {
-    font-size: 30px;
-    margin: 50;
+    font-size: 35px;
+    margin: 0px;
+    text-align: justify;
+    text-justify: auto;
 }
 /* footer ends */
 
@@ -236,3 +236,46 @@ footer h2 {
 .container:hover .middle {
     opacity: 1;
 }
+
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: left;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: right;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .intro {
+        text-align: right;
+    }
+
+    footer h2,
+    footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .project-work {
+        width: 80%;
+    }
+
+    .container{
+        flex: 0 70%;
+    }   
+} 
